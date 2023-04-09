@@ -12,3 +12,8 @@ function My_Third_Function() {
     sentence += " Hopefully I will become a software developer soon!";
     document.getElementById("concatenate").innerHTML = sentence;
 }
+
+function My_Fourth_Function(A, B) {
+    return A * B;
+  }
+  document.getElementById("number").innerHTML = My_Fourth_Function(4, 3);
