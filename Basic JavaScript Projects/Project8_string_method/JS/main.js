@@ -40,8 +40,8 @@ function fix_Method() {//toFixed function
     document.getElementById("number").innerHTML = num.toFixed(1);//This code fix the decimal to 1 place
 }
 
-function value_of_Method() {
+function value_of_Method() { //valueOF method
     var text = "HELLO WORLD!";
-    var result = text.valueOf();
-    document.getElementById("text").innerHTML = result;
+    var result = text.valueOf();//This code displays the value of the variable text
+    document.getElementById("text").innerHTML = result;//This code displays the function result
 }
