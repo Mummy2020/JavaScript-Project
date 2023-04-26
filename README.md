@@ -1,2 +1,4 @@
-# JavaScript Project
- My javaScript project reopsitory for my JavaScript projects
+These are small projects I did using JavaScript:
+[Pizza Menu](https://github.com/Mummy2020/JavaScript-Project/blob/main/Basic%20JavaScript%20Projects/Pizza_Project/Pizza.html)
+[TicTacToe]
+[Calculator]
