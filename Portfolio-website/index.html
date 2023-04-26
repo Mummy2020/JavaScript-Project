@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html><!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sankung Saidyleigh's Portfolio</title>
+        <link rel="shortcut icon" type="img/mp4" href="./Img/coding.mp4">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+    <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!--New section added-->
+            <a href="#slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+             <!-- Onclick and ondblclick functions added to open and close the contact form -->
+             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay="" muted="" loop="" id="Typing_Video">
+            <source src="./Img/coding.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Sankung Saidyleigh's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Programming isn't about what you know; it's about what you can figure out.
+                    <br>
+                    The only way to learn a new programming language is by writing programs in it
+                    <br>
+                    Sometimes it's better to leave something alone, to pause, and that's very true of programming.
+                </q>
+                <br>
+                -Chris Pine, Dennis Ritchie, Joyce Wheeler
+                <br>
+                <br> 
+                My name is Sankung Saidyleigh. Welcome to my software development portfolio website. If you read through, 
+                you will know about my background and experience and the projects i have accomplished.
+                <br>
+                <br> Thank you for your time and enjoy! 
+            </p>
+        </strong>
+    </div>
+
+    
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/self_picture.png">
+                        <div class="text">I'm available to work with you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/CSS_HTML_JS.png"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/Python.png">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/C_sharp_.net.png">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/SQL.png"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Img/coding.png"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./Img/coding_2.png" alt="picture of someone coding">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p style="font-size:1.5vw";>
+                    I am an aspiring softwared developer who is eager to learn more and more about coding. I enjoy solving solving problems.
+                    Beside coding, I also enjoy outdoor activities like soccer, hiking and camping. I love hanging out with family and friends.
+                    <br>
+                    <br>
+                    I am a graduate of 
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>
+                    ’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, 
+                    JavaScript, and Python.
+                    <br>
+                    <br>
+                    I am a junior developer and would love to work with you on your project.
+                    <a href="#Contact">Contact</a> 
+                    me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                     You can view my coding projects on my GitHub profile here: 
+                    <br>
+                 </p>
+                <p class="center">
+                     <a href="https://github.com/Mummy2020" target="_blank">Sankung Saidyleigh Github</a>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Mummy2020" target="_blank">
+                    <img src="./Img/logo.png" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./Img/pic_2.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div id="Contact">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm" ondblclick="closeForm()">
+                
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                    <form action="https://formspree.io/f/mrgolqyv" method="POST" class="form-container">
+                        <h1>Contact</h1>
+                        <label for="name"><b></b>Name</b></label>
+                            <input type="text" placeholder="Please enter your name here" name="name" required>
+                        <label for="email"><b></b>Email</b></label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here" name="message">
+                            <button type="submit" class="btn">SUBMIT</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+        <!--Footer section-->
+        <footer>
+            <p></p>
+            <p class="center">
+                © Sankung Saidyleigh student @ 
+                <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
+            </p>
+            <br>
+        </footer>
+
+        <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=
+            []),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh'},{'server':'a2plcpnl0302'},{'dcenter':'a2'},
+            {'cp_id':'6828831'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web 
+            //hosting support.
+        </script>
+        
+        <script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
+        <script src="JS/portfoli.js"></script>
+    </body>
+</html>
+
+
+
+
+
